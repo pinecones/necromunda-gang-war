@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f332-c73e-59f7-87e3" name="Goliath" revision="13" battleScribeVersion="2.01" authorName="Pinecones" gameSystemId="e0b2-fd9d-e110-5cee" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f332-c73e-59f7-87e3" name="Goliath" revision="17" battleScribeVersion="2.01" authorName="Pinecones" gameSystemId="e0b2-fd9d-e110-5cee" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -150,6 +150,33 @@
                 <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="2568-d4e9-c0be-7b76" name="Lasting Injury" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9fb4-67d9-cf06-06a9" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks>
+                <entryLink id="7ab5-bebd-5d7f-c9af" name="Lasting Injury" hidden="false" targetId="e530-f7e5-8369-3684" type="selectionEntryGroup">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+                <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+                <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
@@ -253,33 +280,6 @@
             <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e4e7-7e78-1d6a-b549" name="Lasting Injury" hidden="false" collective="false" type="upgrade">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="741f-6f4b-76b7-5904" type="max"/>
-          </constraints>
-          <categoryLinks/>
-          <selectionEntries/>
-          <selectionEntryGroups/>
-          <entryLinks>
-            <entryLink id="98ad-286b-9db9-1c8f" name="Lasting Injury" hidden="false" targetId="e530-f7e5-8369-3684" type="selectionEntryGroup">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints/>
-              <categoryLinks/>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
-            <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
-            <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
       <entryLinks/>
@@ -348,7 +348,7 @@
           <modifiers/>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5289-2264-497b-8a0c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b710-5fc4-a3b0-4a88" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b07a-5b30-715e-f5c9" type="min"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries>
@@ -1289,24 +1289,6 @@
                 <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="213c-6bb7-136b-0d35" name="Lasting Injury" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks/>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="878f-7336-029c-029b" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
-                <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
-                <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="7ba0-85ed-2eda-efdb" name="Recovery" hidden="false" collective="false" type="upgrade">
               <profiles/>
               <rules/>
@@ -1325,10 +1307,56 @@
                 <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="55d7-e59d-80cf-3771" name="Lasting Injury" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f9d-4540-0f3d-b67d" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+                <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+                <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks>
             <entryLink id="6716-0971-2d95-61dc" name="Character" hidden="false" targetId="c1f0-739d-4676-019b" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+            <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+            <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5f4c-8cc6-167f-858b" name="Wargear" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e780-6345-35fd-faeb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b587-0a7e-7226-ba46" type="min"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks>
+            <entryLink id="9bab-46b4-84ee-4887" name="Juve Wargear" hidden="false" targetId="adbb-cf8a-c717-3693" type="selectionEntryGroup">
               <profiles/>
               <rules/>
               <infoLinks/>
@@ -1545,7 +1573,7 @@
       <categoryLinks/>
       <selectionEntries/>
       <selectionEntryGroups>
-        <selectionEntryGroup id="94eb-007f-5e06-9606" name="Melee weapons" hidden="false" collective="false">
+        <selectionEntryGroup id="94eb-007f-5e06-9606" name="Melee Weapons" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1691,7 +1719,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="ca9a-6df4-69c1-f494" name="Special Wepaons" hidden="false" collective="false">
+        <selectionEntryGroup id="ca9a-6df4-69c1-f494" name="Special Weapons" hidden="false" collective="false">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1972,11 +2000,23 @@
               <constraints/>
               <categoryLinks/>
               <selectionEntries>
-                <selectionEntry id="a0c8-4dae-b518-f95e" name="Autopistol" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="8e76-8994-67ec-8157" name="Autopistol" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="ca45-85a3-2739-757e" name="Autopistol" hidden="false" targetId="bfc9-00f1-ff8a-0483" type="profile">
+                    <infoLink id="157a-d2ea-4158-3cc1" name="Autopistol" hidden="false" targetId="bfc9-00f1-ff8a-0483" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="c8f1-3606-c8dc-8987" name="Pistol" hidden="false" targetId="3470-68c6-32c7-1662" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="534d-f323-b9a1-bc26" name="Rapid Fire (X)" hidden="false" targetId="4e1d-8d84-5009-26e4" type="rule">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -1995,11 +2035,23 @@
                     <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="71c2-dc55-5fbe-7728" name="Laspistol" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="bbd6-9d9e-0f73-c91b" name="Laspistol" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="983e-355e-4220-8086" name="Laspistol" hidden="false" targetId="a95c-9377-60c6-2edd" type="profile">
+                    <infoLink id="96f3-a00d-f949-84db" name="Laspistol" hidden="false" targetId="a95c-9377-60c6-2edd" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="1289-f988-306f-0965" name="Pistol" hidden="false" targetId="3470-68c6-32c7-1662" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="e478-b6b9-81e5-ecf8" name="Plentiful" hidden="false" targetId="c823-a12f-6b9f-635c" type="rule">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -2018,11 +2070,23 @@
                     <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="b876-4c30-8cfe-37f1" name="Stub gun" hidden="false" collective="false" type="upgrade">
+                <selectionEntry id="de7f-c5c9-8f41-a033" name="Stub gun" hidden="false" collective="false" type="upgrade">
                   <profiles/>
                   <rules/>
                   <infoLinks>
-                    <infoLink id="bb61-5167-9903-fdb7" name="Stub gun" hidden="false" targetId="bd50-9e11-50c4-b464" type="profile">
+                    <infoLink id="80e6-2d07-a0e6-cd63" name="Stub gun" hidden="false" targetId="bd50-9e11-50c4-b464" type="profile">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="8f6f-5115-0776-514c" name="Plentiful" hidden="false" targetId="c823-a12f-6b9f-635c" type="rule">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                    </infoLink>
+                    <infoLink id="9aaf-8339-6c12-44be" name="Pistol" hidden="false" targetId="3470-68c6-32c7-1662" type="rule">
                       <profiles/>
                       <rules/>
                       <infoLinks/>
@@ -2033,11 +2097,34 @@
                   <constraints/>
                   <categoryLinks/>
                   <selectionEntries/>
-                  <selectionEntryGroups/>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="9bf6-7443-523b-db2c" name="Pistol Upgrades" hidden="false" collective="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <constraints/>
+                      <categoryLinks/>
+                      <selectionEntries/>
+                      <selectionEntryGroups/>
+                      <entryLinks>
+                        <entryLink id="e8b3-7b18-ea61-a36b" name="Stub Gun - Dumdum rounds" hidden="false" targetId="cd74-7974-0214-b5a9" type="selectionEntry">
+                          <profiles/>
+                          <rules/>
+                          <infoLinks/>
+                          <modifiers/>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9177-c2f8-4a68-7389" type="max"/>
+                          </constraints>
+                          <categoryLinks/>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                   <entryLinks/>
                   <costs>
-                    <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="1.0"/>
                     <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="5.0"/>
+                    <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="1.0"/>
                     <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -2083,6 +2170,14 @@
                   <constraints/>
                   <categoryLinks/>
                 </entryLink>
+                <entryLink id="d995-0062-ea11-ff7b" name="Club, maul or hammer" hidden="false" targetId="9354-6d02-e98d-cac3" type="selectionEntry">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints/>
+                  <categoryLinks/>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2090,6 +2185,34 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks/>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="adbb-cf8a-c717-3693" name="Juve Wargear" hidden="false" collective="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks>
+        <entryLink id="7496-58be-dcdc-31a8" name="Respirator" hidden="false" targetId="529c-afbb-cdc9-06a9" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers>
+            <modifier type="set" field="0a70-8b99-2ebd-4ce3" value="15">
+              <repeats/>
+              <conditions/>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d64d-ccc2-67fa-98b6" type="max"/>
+          </constraints>
+          <categoryLinks/>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules/>

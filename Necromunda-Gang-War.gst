@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e0b2-fd9d-e110-5cee" name="Necromunda Gang War" revision="6" battleScribeVersion="2.01" authorName="Pinecones" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e0b2-fd9d-e110-5cee" name="Necromunda Gang War" revision="8" battleScribeVersion="2.01" authorName="Pinecones" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -123,9 +123,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="809e-e9a3-1d3d-6fc7" type="max"/>
-          </constraints>
+          <constraints/>
         </categoryLink>
         <categoryLink id="769d-607a-c4d7-5310" name="Fighters" hidden="false" targetId="ca12-6ac2-dc47-76ec" primary="false">
           <profiles/>
@@ -139,9 +137,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d64-c14b-9e1b-ff03" type="min"/>
-          </constraints>
+          <constraints/>
         </categoryLink>
         <categoryLink id="b30e-c854-6a32-cb8a" name="Leader" hidden="false" targetId="3f48-3cf7-6934-2b29" primary="false">
           <profiles/>
@@ -1437,7 +1433,7 @@
       <entryLinks/>
       <costs>
         <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="1.0"/>
-        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="15.0"/>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="20.0"/>
         <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1646,7 +1642,7 @@
       <entryLinks/>
       <costs>
         <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="1.0"/>
-        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="25.0"/>
         <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1686,7 +1682,7 @@
       <selectionEntryGroups/>
       <entryLinks/>
       <costs>
-        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="35.0"/>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="40.0"/>
         <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
         <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
       </costs>
@@ -3922,6 +3918,75 @@
         <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ebbf-6085-1873-ea0f" name="Stiletto Sword" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="55f9-81f5-dfde-1498" name="Melee" hidden="false" targetId="c63b-2043-2de7-42b5" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="e94e-dc0c-c4dd-c76f" name="Parry" hidden="false" targetId="3371-1077-dea5-38ab" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="3e69-3571-9507-6c33" name="Toxin" hidden="false" targetId="1018-11de-ae43-0d70" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="d4ba-edc0-c838-2bb4" name="Stiletto Sword" hidden="false" targetId="b932-9748-d9b3-22a5" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="1.0"/>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="35.0"/>
+        <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9354-6d02-e98d-cac3" name="Club, maul or hammer" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="e594-fbd7-188a-be1c" name="Melee" hidden="false" targetId="c63b-2043-2de7-42b5" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+        <infoLink id="cfbb-3043-cab1-adf5" name="Club, maul or hammer" hidden="false" targetId="2769-5b32-5453-7220" type="profile">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints/>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="1.0"/>
+        <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="5.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="6568-3fd4-2fd6-b3ae" name="Leadership Skills" hidden="false" collective="false">
@@ -5652,6 +5717,7 @@
           <costs>
             <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="10.0"/>
             <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="5.0"/>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3ef4-4461-e64a-9d0b" name="[3 XP] Improve the figther&apos;s Willpower by 1" hidden="false" collective="false" type="upgrade">
@@ -5675,6 +5741,7 @@
           <costs>
             <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="5.0"/>
             <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="3.0"/>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f9de-6491-ab3a-0ec0" name="[3 XP] Improve the figther&apos;s Intelligence by 1" hidden="false" collective="false" type="upgrade">
@@ -5698,6 +5765,7 @@
           <costs>
             <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="3.0"/>
             <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="5.0"/>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3967-6c38-d36b-2699" name="[4 XP] Improve the fighters Cool by 1" hidden="false" collective="false" type="upgrade">
@@ -5721,6 +5789,7 @@
           <costs>
             <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="4.0"/>
             <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="10.0"/>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="99d7-6f04-eedb-3509" name="[4 XP] Improve the fighters Leadership by 1" hidden="false" collective="false" type="upgrade">
@@ -5744,6 +5813,7 @@
           <costs>
             <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="4.0"/>
             <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="10.0"/>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e906-7a32-e8e6-2dbb" name="[5 XP] Add 1&quot; to the fighter&apos;s Movement" hidden="false" collective="false" type="upgrade">
@@ -5767,6 +5837,7 @@
           <costs>
             <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="10.0"/>
             <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="5.0"/>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9b6a-adec-9f9c-d2f8" name="[6 XP] Improve the fighter&apos;s WS by 1" hidden="false" collective="false" type="upgrade">
@@ -5787,7 +5858,11 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name=" Weapon slot" costTypeId="aa9b-e132-09d9-3ec0" value="0.0"/>
+            <cost name=" Credits" costTypeId="0a70-8b99-2ebd-4ce3" value="0.0"/>
+            <cost name=" Experience" costTypeId="e376-1490-44be-734d" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups/>
@@ -6914,13 +6989,13 @@ Synthesize Poison (Basic) – If the fighter is Engaged, make a Cool check. If t
         <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="Make a Leadership check for this fighter each time another fighter within 6&quot; gains a point of Experience. If the check passes, that fighter gains 2 Experience instead of 1."/>
       </characteristics>
     </profile>
-    <profile id="f5c8-17f1-e9eb-90fc" name="** Mighty Leap" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
+    <profile id="f5c8-17f1-e9eb-90fc" name="Mighty Leap" hidden="false" profileTypeId="ac19-656d-841d-ab03" profileTypeName="Skill">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="A fighter can attempt to leap (Pg. 11) allows"/>
+        <characteristic name="Description" characteristicTypeId="1ec0-e86d-65c5-8dc8" value="A fighter can attempt to leap (Pg. 10) across gaps that are no wider than their movement characteristic. If the gap is wider than half their Movement characteristic, the Initiative test has a -1 modifier."/>
       </characteristics>
     </profile>
     <profile id="fda3-d465-a80c-6492" name="Chem-pit" hidden="false" profileTypeId="3bc4-bab6-bfcc-790b" profileTypeName="Territory">
@@ -7417,6 +7492,91 @@ Synthesize Poison (Basic) – If the fighter is Engaged, make a Cool check. If t
       <modifiers/>
       <characteristics>
         <characteristic name="Lasting Injury" characteristicTypeId="e0ba-3c9b-0857-d86b" value="The fighter is killed instantly - not even a visit to the Doc can save them. If the injury was caused by an attack, the attacker gains one additional Experience."/>
+      </characteristics>
+    </profile>
+    <profile id="b932-9748-d9b3-22a5" name="Stiletto Sword" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Rng S" characteristicTypeId="6420-b37b-f34f-ba9b" value="-"/>
+        <characteristic name="Rng L" characteristicTypeId="dc06-720b-a3a6-8c3d" value="E"/>
+        <characteristic name="Acc S" characteristicTypeId="575d-84b7-41cb-bfdb" value="-"/>
+        <characteristic name="Acc L" characteristicTypeId="06be-d11e-cdbf-1be4" value="-"/>
+        <characteristic name="Str" characteristicTypeId="b60f-bf38-2db3-1ff5" value="S"/>
+        <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-1"/>
+        <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="1"/>
+        <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="-"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melee, Parry, Toxin"/>
+      </characteristics>
+    </profile>
+    <profile id="2769-5b32-5453-7220" name="Club, maul or hammer" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Rng S" characteristicTypeId="6420-b37b-f34f-ba9b" value="-"/>
+        <characteristic name="Rng L" characteristicTypeId="dc06-720b-a3a6-8c3d" value="E"/>
+        <characteristic name="Acc S" characteristicTypeId="575d-84b7-41cb-bfdb" value="-"/>
+        <characteristic name="Acc L" characteristicTypeId="06be-d11e-cdbf-1be4" value="-"/>
+        <characteristic name="Str" characteristicTypeId="b60f-bf38-2db3-1ff5" value="S"/>
+        <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-"/>
+        <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="2"/>
+        <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="-"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melee"/>
+      </characteristics>
+    </profile>
+    <profile id="da8b-2987-bafa-e63d" name="Two-handed Weapon" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Rng S" characteristicTypeId="6420-b37b-f34f-ba9b" value="-"/>
+        <characteristic name="Rng L" characteristicTypeId="dc06-720b-a3a6-8c3d" value="E"/>
+        <characteristic name="Acc S" characteristicTypeId="575d-84b7-41cb-bfdb" value="-"/>
+        <characteristic name="Acc L" characteristicTypeId="06be-d11e-cdbf-1be4" value="-1"/>
+        <characteristic name="Str" characteristicTypeId="b60f-bf38-2db3-1ff5" value="S"/>
+        <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-1"/>
+        <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="1"/>
+        <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="-"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melee, Unwieldy"/>
+      </characteristics>
+    </profile>
+    <profile id="8f62-f75a-6523-0969" name="Sword" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Rng S" characteristicTypeId="6420-b37b-f34f-ba9b" value="-"/>
+        <characteristic name="Rng L" characteristicTypeId="dc06-720b-a3a6-8c3d" value="E"/>
+        <characteristic name="Acc S" characteristicTypeId="575d-84b7-41cb-bfdb" value="-"/>
+        <characteristic name="Acc L" characteristicTypeId="06be-d11e-cdbf-1be4" value="+1"/>
+        <characteristic name="Str" characteristicTypeId="b60f-bf38-2db3-1ff5" value="S"/>
+        <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-1"/>
+        <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="1"/>
+        <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="-"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Melee, Parry"/>
+      </characteristics>
+    </profile>
+    <profile id="5570-231b-109a-5f3e" name="Flail" hidden="false" profileTypeId="b65b-4ec6-9614-814f" profileTypeName="Weapon">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <characteristics>
+        <characteristic name="Rng S" characteristicTypeId="6420-b37b-f34f-ba9b" value="-"/>
+        <characteristic name="Rng L" characteristicTypeId="dc06-720b-a3a6-8c3d" value="E"/>
+        <characteristic name="Acc S" characteristicTypeId="575d-84b7-41cb-bfdb" value="-"/>
+        <characteristic name="Acc L" characteristicTypeId="06be-d11e-cdbf-1be4" value="+1"/>
+        <characteristic name="Str" characteristicTypeId="b60f-bf38-2db3-1ff5" value="+1"/>
+        <characteristic name="AP" characteristicTypeId="7a01-bbcb-6277-ec22" value="-"/>
+        <characteristic name="D" characteristicTypeId="5e99-56ec-0b34-0e63" value="1"/>
+        <characteristic name="Ammo" characteristicTypeId="6c4b-e6b7-46ee-0d0f" value="-"/>
+        <characteristic name="Traits" characteristicTypeId="bba1-4dba-91f0-91cd" value="Entangle, Melee"/>
       </characteristics>
     </profile>
   </sharedProfiles>
